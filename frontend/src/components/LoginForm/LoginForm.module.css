@@ -1,0 +1,23 @@
+.loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.label {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+}

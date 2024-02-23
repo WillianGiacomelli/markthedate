@@ -1,0 +1,41 @@
+.dataTableHeading,
+.dataRow {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dataTableHeading div,
+.dataRow div {
+  flex: 1 1 0;
+}
+
+.editBtn,
+.removeBtn {
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.editBtn {
+  background-color: #007bff;
+}
+
+.editBtn:hover {
+  background-color: #0069d9;
+}
+
+.removeBtn {
+  background-color: #dc3545;
+}
+
+.removeBtn:hover {
+  background-color: #c82333;
+}

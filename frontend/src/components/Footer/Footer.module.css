@@ -1,0 +1,20 @@
+.footer {
+  background-color: #25282e;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.text {
+  color: #c1b696;
+}
