@@ -11,9 +11,7 @@ MarkTheDate é um aplicativo web que permite aos usuários marcar e acompanhar e
 
 Aqui está uma pré-visualização do projeto em execução:
 
-<div align="center" width=600>
-![](./public/demostracao.gif)
-</div>
+<img src="./public/demostracao.gif" width="100%" height="auto">
 
 ### Pré-requisitos
 
