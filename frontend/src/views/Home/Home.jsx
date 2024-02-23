@@ -17,7 +17,6 @@ const Home = () => {
         });
 
         const data = await response.json();
-        console.log(data);
         if (data.events) {
           data.events.forEach((event, index) => {
             if (event.eventDate) {

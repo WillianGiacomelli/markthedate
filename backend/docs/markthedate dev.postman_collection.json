@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "4aee1293-8eb1-480b-85df-568d2b68dea7",
+		"name": "markthedate dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28418174"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/user/65c541e2ec00f56bb73bda86",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"user",
+								"65c541e2ec00f56bb73bda86"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Willian\",\r\n    \"email\":\"willian3@email.com\",\r\n    \"password\":\"teste123\",\r\n    \"confirmpassword\":\"teste123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/auth/register",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"williangatinho@gmail.com\",\r\n    \"password\":\"teste123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/auth/login",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoid2lsbHNvbiIsImlkIjoiNjVjNTQyNWZmYjMwZjA2ZTJhMTI3ODk2IiwiaWF0IjoxNzA3NjczNzE5fQ.kkLYESCY23WSOBRf9htfrtHJ6zrUCVTOy_O7dVnAo24",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Minha festa\",\r\n    \"description\":\"\",\r\n    \"party_date\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/event/",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"event",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List - all",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "List - id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoid2lsbHNvbiIsImlkIjoiNjVjNTQyNWZmYjMwZjA2ZTJhMTI3ODk2IiwiaWF0IjoxNzA3NzYzMjk5fQ.XN97Gc_OIYG4Uiu9aib-PyJWf9IlujXkPHyv8O_LKSE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"65c93f7c1255dd7665fdfc8f\",\r\n    \"title\": \"Minha festa de arromba\",\r\n    \"description\": \"descricao da festa de arromba\",\r\n    \"photos\": [],\r\n    \"privacy\": false,\r\n    \"userId\": \"65c5425ffb30f06e2a127896\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/event",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"event"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000/",
+			"type": "string"
+		}
+	]
+}
