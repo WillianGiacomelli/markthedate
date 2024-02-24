@@ -73,7 +73,7 @@ $ npm start
 # entre no diretório
 $ cd markthedate
 
-# entre no repositório backend
+# entre no repositório frontend
 $ cd frontend
 
 # instale as dependências
